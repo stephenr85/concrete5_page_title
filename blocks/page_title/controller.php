@@ -12,7 +12,7 @@
 			$c = Page::getCurrentPage();
 				
 			if(!empty($this->override)){
-				$title = $override;
+				$title = $this->override;
 			}else if(!empty($this->tatHandle)){
 				$title = $c->getCollectionAttributeValue($this->tatHandle);
 			}
